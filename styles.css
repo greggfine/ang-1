@@ -25,6 +25,10 @@ body {
      width: 100%;
 }
 
+.content h2 {
+     text-align: center;
+}
+
 .footer{
      background-color: #002A3A;
      color: #EE3D6E;
@@ -37,25 +41,7 @@ body {
      text-align: center;
 }
 
-form {
-     max-width: 600px;
-     margin: 100px auto;
-     display: flex;
-     flex-direction: column;
-}
 
-form input {
-     padding: 10px;
-     margin: 10px;
-     border-radius: 6px;
-}
-
-form textarea {
-   width: 300px;
-   height: 200px;
-   margin: 30px auto;
-   border-radius: 6px;
-}
 
 .hero-image {
      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/puk-khantho-125951-unsplash.jpg");
@@ -231,6 +217,11 @@ nav h1 {
      color: white;
 }
 
+.open-slide {
+     padding-left: 30px;
+     line-height: 90px;
+}
+
 .side-nav {
      height: 100%;
      width: 0;
@@ -256,7 +247,6 @@ nav h1 {
 
 .side-nav a:hover{
      color: #fff;
-     /* color: #EE3D6E; */
 }
 
 .side-nav .btn-close{
@@ -264,7 +254,7 @@ nav h1 {
      top:0;
      right: 22px;
      font-size: 36px;
-     margin-left: 50px;
+     margin-left: 10px;
 }
 
 
@@ -276,13 +266,37 @@ nav h1 {
      width: 100%;
 }
 
-@media screen and (min-width: 568px){
+@media screen and (max-width: 960px){
+     nav h1 {
+          font-size: 1.2rem;
+          padding-left: 30px;
+          line-height: 70px;
+          transform: translateY(-50%);
+     }
+     .nav-links {
+          margin-right: 0px; 
+          font-size: 0.9rem;
+     }
+     .nav-links li a {
+          margin-right: 40px;
+     }
+}
+
+@media screen and (min-width: 620px){
      .open-slide{
           display: none;
      }
 }
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 620px){
+     .home-info-group {
+          flex-direction: column;
+          margin-top: 70px;
+          padding: 20px;
+     }
+     nav h1 {
+          padding-right: 30px;
+     }
      .nav-links{
           display: none;
      }
@@ -311,4 +325,89 @@ main.ng-enter.ng-enter-active {
 }
 
 
+form {
+     border: 1px solid #000;
+     display: flex;
+     flex-direction: column;
+     max-width: 600px;
+     margin: 30px auto 160px;
+     padding: 30px;
+}
 
+form input {
+     padding: 10px;
+     margin-bottom: 20px;
+}
+
+form label {
+     margin-bottom: 10px;
+}
+
+form textarea {
+   height: 200px;
+}
+
+input[type="submit"]{
+     padding: 0px;
+     height: 30px;
+     margin-top: 40px;
+     font-size: 1rem;
+     width: 150px !important;
+     border: none !important;
+     cursor: pointer;
+     color: #fff;
+     -webkit-border-radius: .5em;
+     -moz-border-radius: .5em;
+     border-radius: .5em;
+     color: #faddde;
+     border: solid 1px #980c10;
+     background: #d81b21;
+     background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+     background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+} 
+
+
+
+/* form{
+     display: flex;
+     flex-direction: column;
+     background: #000;
+     width : 375;
+     height: 460px;
+     overflow: hidden;
+     margin: 20px;
+     border: 2px solid #fff;
+ }
+
+form textarea {
+     line-height: 16px;
+     font-size: 14px;
+     height: 100px;
+ }
+form label{
+     font-size : 14px;
+     margin-left: 20px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     width: 290px;
+     padding: 0 0 10px;
+     color: #fff;
+ }
+
+
+ input[type="submit"]{
+     padding: 0px;
+     height: 30px;
+     width: 150px !important;
+     border: none !important;
+     cursor: pointer;
+     color: #fff;
+     -webkit-border-radius: .5em;
+     -moz-border-radius: .5em;
+     border-radius: .5em;
+     color: #faddde;
+     border: solid 1px #980c10;
+     background: #d81b21;
+     background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+     background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+} */
