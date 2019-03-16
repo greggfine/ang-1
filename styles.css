@@ -83,6 +83,10 @@ input[disabled="disabled"]{
      cursor: not-allowed !important;
 }
 
+.keyboard-detail {
+     text-align: center;
+}
+
 .keyboard-filter {
      border: 1px solid #000;
      margin: 40px auto;
@@ -144,7 +148,7 @@ input[disabled="disabled"]{
 
 nav {
      height: 70px; 
-     border-bottom: 1px solid black;
+     /* border-bottom: 1px solid rgba(0, 0, 0, .8); */
      display: flex;
      justify-content: space-between;
      overflow: hidden;
